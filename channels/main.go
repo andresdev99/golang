@@ -36,7 +36,7 @@ func main() {
 
 	// Create channels.
 	// Using a buffered channel for inChan prevents any potential blocking when sending.
-	inChan := make(chan int, 1)
+	inChan := make(chan int)
 	outChan := make(chan int)
 	numberChan := make(chan int)
 
